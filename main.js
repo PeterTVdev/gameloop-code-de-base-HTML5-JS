@@ -17,6 +17,10 @@ function run() {
 
 function init() {
    // console.log("init");
+    ctx.imageSmoothingEnabled = false;
+    ctx.msImageSmoothingEnabled = false;
+    ctx.webkitImageSmoothingEnabled = false;
+    ctx.mozImageSmoothingEnabled = false;
     load();
     interval = setInterval(run, 1000 / 60 );
 }
