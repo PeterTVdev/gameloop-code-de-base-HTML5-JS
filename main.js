@@ -5,6 +5,9 @@ let interval;
 
 let dernierUpdate = Date.now();
 
+ctx.fillStyle = "White";
+ctx.font = "normal 16pt Arial";
+
 function run() {
     let maintenant = Date.now();
     let dt = (maintenant - dernierUpdate) / 1000;
