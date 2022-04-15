@@ -13,3 +13,7 @@ function DrawCircle(pCtx, px, py, pr) {
     pCtx.stroke();
 
 }
+
+function DrawText(pCtx, pText, px, py) {
+    pCtx.fillText(pText, px, py);
+}
