@@ -14,14 +14,18 @@ function DrawCircle(pCtx, px, py, pr) {
 
 }
 
-function DrawFillRect(pCtx, px, py, pl, ph, pStyle = "white") {
+function DrawFillRect(pCtx, px, py, pl, ph, pStyle = "white", pAlpha = 1) {
+    pCtx.globalAlpha = pAlpha;
     pCtx.fillStyle = pStyle;
     pCtx.fillRect(px, py, pl, ph);
+    pCtx.globalAlpha = 1;
+    pCtx.fill();
 }
 
 function DrawStrokeRect(pCtx, px, py, pl, ph, pStyle = "white") {
     pCtx.fillStyle = pStyle;
     pCtx.strokeRect(px, py, pl, ph);
+    pCtx.fill();
 }
 
 function DrawText(pCtx, pText, px, py) {
