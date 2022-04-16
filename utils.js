@@ -14,6 +14,16 @@ function DrawCircle(pCtx, px, py, pr) {
 
 }
 
+function DrawFillRect(pCtx, px, py, pl, ph, pStyle = "white") {
+    pCtx.fillStyle = pStyle;
+    pCtx.fillRect(px, py, pl, ph);
+}
+
+function DrawStrokeRect(pCtx, px, py, pl, ph, pStyle = "white") {
+    pCtx.fillStyle = pStyle;
+    pCtx.strokeRect(px, py, pl, ph);
+}
+
 function DrawText(pCtx, pText, px, py) {
     pCtx.fillText(pText, px, py);
 }
