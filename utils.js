@@ -4,6 +4,13 @@ function rnd(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
+function CheckCollision(x1,y1,w1,h1, x2,y2,w2,h2) {
+   return x1 < x2+w2 &&
+          x2 < x1+w1 &&
+          y1 < y2+h2 &&
+          y2 < y1+h1
+ }
+
 function DrawCircle(pCtx, px, py, pr) {
     pCtx.beginPath();
     pCtx.strokeStyle = "white";
