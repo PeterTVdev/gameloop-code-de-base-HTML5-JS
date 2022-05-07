@@ -1,3 +1,5 @@
+//https://www.toptal.com/developers/keycode/for/Space
+
 function rnd(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
